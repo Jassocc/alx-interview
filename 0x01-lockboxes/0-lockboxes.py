@@ -3,6 +3,7 @@
 determines if all the boxes can be opened.
 """
 
+
 def canUnlockAll(boxes):
     """
     checks if all the boxes can be opened
@@ -10,7 +11,7 @@ def canUnlockAll(boxes):
     if not boxes:
         return False
     n = len(boxes)
-    visited = [False] *n
+    visited = [False] * n
     visited[0] = True
     queue = [0]
     while queue:
