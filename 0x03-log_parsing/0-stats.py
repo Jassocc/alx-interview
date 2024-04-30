@@ -11,7 +11,7 @@ def extract_input(input_line):
     """
     fp = (
         r'\s*(?P<ip>\S+)\s*',
-        r'\s*\[(?P<date>\d+\-\d+ \d+:\d+:\d+\.\d+)\]',
+        r'\s*\[(?P<date>\d+\-\d+\-\d+ \d+:\d+:\d+\.\d+)\]',
         r'\s*"(?P<request>[^"]*)"\s*',
         r'\s*(?P<status_code>\S+)',
         r'\s*(?P<file_size>\d+)'
