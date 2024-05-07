@@ -42,7 +42,7 @@ def validUTF8(data):
                 skip = span - 1
             else:
                 return False
-        elif data[a] & 0b1110000 == 0b11000000:
+        elif data[a] & 0b11100000 == 0b11000000:
             span = 2
             if dat - a > span:
                 next_b = list(map(
