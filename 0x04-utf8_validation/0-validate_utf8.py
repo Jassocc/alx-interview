@@ -25,7 +25,7 @@ def validUTF8(data):
                     lambda x: x & 0b11000000 == 0b10000000,
                     data[a + 1: a + span],
                 ))
-                if not all(nxt_b):
+                if not all(next_b):
                     return False
                 skip = span - 1
             else:
@@ -49,7 +49,7 @@ def validUTF8(data):
                     lambda x: x & 0b11000000 == 0b10000000,
                     data[a + 1: a + span],
                 ))
-                if not all(next_body):
+                if not all(next_b):
                     return False
                 skip = span - 1
             else:
