@@ -38,7 +38,7 @@ def solve_n_queens(N):
             print(board)
             return
         for col in range(N):
-            if is_safe(board, row, col):
+            if is_safe(board, row, col, N):
                 board[row] = col
                 solve(row + 1)
     board = [-1] * N
