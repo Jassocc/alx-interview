@@ -30,7 +30,7 @@ def isWinner(x, nums):
     if sc * 2 == len(nums):
         win = None
     if sc * 2 > len(nums):
-        win =  "Maria"
+        win = "Maria"
     else:
         win = "Ben"
     return win
