@@ -17,7 +17,7 @@ def isWinner(x, nums):
             continue
         for b in range(a * a, max_n + 1, a):
             is_prime[b] = False
-    is_prime[0] = is_prime[1]] = False
+    is_prime[0] = is_prime[1] = False
     cume_p = 0
     for a in range(len(is_prime)):
         if is_prime[a]:
